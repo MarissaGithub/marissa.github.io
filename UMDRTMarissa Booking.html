@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>FREE Financial Risk & Protection Assessment | Marissa Umali</title>
+
+  <meta name="description"
+        content="Book your FREE Financial Risk & Protection Assessment with Marissa Umali. Know your financial protection gap and financial worth.">
+
+  <style>
+    /* =========================
+       RESET
+    ========================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      min-height: 100vh;
+
+      background:
+        radial-gradient(
+          circle at top left,
+          rgba(220, 20, 60, 0.12),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          #f8f8f8,
+          #eeeeee
+        );
+
+      color: #222;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      padding: 30px 15px;
+    }
+
+
+    /* =========================
+       MAIN CONTAINER
+    ========================= */
+
+    .container {
+      width: 100%;
+      max-width: 760px;
+    }
+
+
+    /* =========================
+       CLICKABLE POSTER
+    ========================= */
+
+    .poster-link {
+      display: block;
+
+      text-decoration: none;
+      color: inherit;
+
+      border-radius: 28px;
+
+      overflow: hidden;
+
+      background: #ffffff;
+
+      box-shadow:
+        0 15px 45px rgba(0, 0, 0, 0.16);
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+
+    .poster-link:hover {
+      transform: translateY(-6px);
+
+      box-shadow:
+        0 22px 55px rgba(0, 0, 0, 0.22);
+    }
+
+
+    .poster-link:active {
+      transform: translateY(-1px);
+    }
+
+
+    /* =========================
+       POSTER
+    ========================= */
+
+    .poster {
+
+      position: relative;
+
+      overflow: hidden;
+
+      padding:
+        55px
+        40px
+        45px;
+
+      text-align: center;
+
+      color: #ffffff;
+
+      background:
+
+        radial-gradient(
+          circle at 90% 10%,
+          rgba(255,255,255,0.18) 0,
+          rgba(255,255,255,0.18) 70px,
+          transparent 71px
+        ),
+
+        radial-gradient(
+          circle at 5% 90%,
+          rgba(255,255,255,0.08) 0,
+          rgba(255,255,255,0.08) 110px,
+          transparent 111px
+        ),
+
+        linear-gradient(
+          145deg,
+          #8d0012 0%,
+          #c60018 45%,
+          #e21a2d 100%
+        );
+    }
+
+
+    /* Decorative circle */
+
+    .poster::before {
+
+      content: "";
+
+      position: absolute;
+
+      width: 220px;
+      height: 220px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid rgba(255,255,255,0.16);
+
+      right: -80px;
+      top: -80px;
+    }
+
+
+    .poster::after {
+
+      content: "";
+
+      position: absolute;
+
+      width: 150px;
+      height: 150px;
+
+      border-radius: 50%;
+
+      border:
+        1px solid rgba(255,255,255,0.12);
+
+      left: -60px;
+      bottom: -60px;
+    }
+
+
+    /* =========================
+       SMALL LABEL
+    ========================= */
+
+    .label {
+
+      position: relative;
+
+      display: inline-block;
+
+      padding:
+        9px
+        18px;
+
+      margin-bottom: 25px;
+
+      border:
+        1px solid rgba(255,255,255,0.65);
+
+      border-radius: 50px;
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      letter-spacing: 1.5px;
+
+      text-transform: uppercase;
+
+      background:
+        rgba(255,255,255,0.08);
+    }
+
+
+    /* =========================
+       HEADLINE
+    ========================= */
+
+    h1 {
+
+      position: relative;
+
+      font-size:
+        clamp(
+          34px,
+          7vw,
+          58px
+        );
+
+      line-height: 1.02;
+
+      font-weight: 800;
+
+      letter-spacing: -1.5px;
+
+      max-width: 680px;
+
+      margin:
+        0 auto 22px;
+    }
+
+
+    /* =========================
+       SUBTITLE
+    ========================= */
+
+    .subtitle {
+
+      position: relative;
+
+      font-size:
+        clamp(
+          20px,
+          4vw,
+          30px
+        );
+
+      line-height: 1.25;
+
+      font-weight: 700;
+
+      max-width: 650px;
+
+      margin:
+        0 auto 24px;
+    }
+
+
+    /* =========================
+       DESCRIPTION
+    ========================= */
+
+    .description {
+
+      position: relative;
+
+      max-width: 600px;
+
+      margin:
+        0 auto;
+
+      font-size: 17px;
+
+      line-height: 1.65;
+
+      color:
+        rgba(255,255,255,0.94);
+    }
+
+
+    /* =========================
+       BENEFITS
+    ========================= */
+
+    .benefits {
+
+      position: relative;
+
+      display: grid;
+
+      grid-template-columns:
+        repeat(3, 1fr);
+
+      gap: 12px;
+
+      max-width: 650px;
+
+      margin:
+        32px auto;
+    }
+
+
+    .benefit {
+
+      padding:
+        18px
+        12px;
+
+      border:
+        1px solid rgba(255,255,255,0.25);
+
+      border-radius: 16px;
+
+      background:
+        rgba(255,255,255,0.11);
+
+      backdrop-filter:
+        blur(5px);
+
+      font-size: 14px;
+
+      line-height: 1.35;
+
+      font-weight: 700;
+    }
+
+
+    /* =========================
+       CTA BUTTON
+    ========================= */
+
+    .cta {
+
+      position: relative;
+
+      display: inline-block;
+
+      padding:
+        17px
+        30px;
+
+      border-radius: 50px;
+
+      background: #ffffff;
+
+      color: #b00017;
+
+      font-size: 18px;
+
+      font-weight: 800;
+
+      box-shadow:
+        0 8px 20px
+        rgba(0,0,0,0.20);
+
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+
+    .poster-link:hover .cta {
+
+      transform: scale(1.04);
+
+      box-shadow:
+        0 11px 25px
+        rgba(0,0,0,0.25);
+    }
+
+
+    /* =========================
+       CLICK INSTRUCTION
+    ========================= */
+
+    .click-note {
+
+      position: relative;
+
+      margin-top: 17px;
+
+      font-size: 13px;
+
+      color:
+        rgba(255,255,255,0.82);
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    .footer {
+
+      text-align: center;
+
+      padding:
+        22px
+        15px;
+
+      background: #ffffff;
+
+      color: #555;
+
+      line-height: 1.5;
+    }
+
+
+    .name {
+
+      font-size: 17px;
+
+      font-weight: 800;
+
+      color: #222;
+
+      margin-bottom: 4px;
+    }
+
+
+    .role {
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       MOBILE
+    ========================= */
+
+    @media (max-width: 600px) {
+
+      body {
+        padding:
+          15px
+          10px;
+      }
+
+
+      .poster {
+
+        padding:
+          40px
+          20px
+          35px;
+      }
+
+
+      h1 {
+
+        letter-spacing:
+          -0.8px;
+      }
+
+
+      .description {
+
+        font-size: 15px;
+      }
+
+
+      .benefits {
+
+        grid-template-columns:
+          1fr;
+
+        gap: 9px;
+
+        margin:
+          25px auto;
+      }
+
+
+      .benefit {
+
+        padding:
+          13px;
+      }
+
+
+      .cta {
+
+        display: block;
+
+        width: 100%;
+
+        padding:
+          16px
+          15px;
+
+        font-size: 16px;
+      }
+
+
+      .click-note {
+
+        font-size: 12px;
+      }
+    }
+
+
+    /* =========================
+       VERY SMALL PHONES
+    ========================= */
+
+    @media (max-width: 380px) {
+
+      .poster {
+
+        padding:
+          32px
+          15px
+          28px;
+      }
+
+
+      h1 {
+
+        font-size: 31px;
+      }
+
+
+      .subtitle {
+
+        font-size: 19px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="container">
+
+    <!--
+      ENTIRE POSTER IS CLICKABLE
+
+      Replace the URL below if your Google Form changes.
+    -->
+
+    <a
+      class="poster-link"
+
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfObWBNhmk7PST3qDsJRBwcmRXKLRokQWNHox2tr8j3fQYdkA/viewform"
+
+      target="_blank"
+
+      rel="noopener noreferrer"
+
+      aria-label="Book my FREE Financial Risk and Protection Assessment"
+    >
+
+      <!-- =========================
+           POSTER CONTENT
+      ========================= -->
+
+      <section class="poster">
+
+        <div class="label">
+          FREE CONSULTATION
+        </div>
+
+
+        <h1>
+          FREE Financial Risk
+          &amp; Protection Assessment
+        </h1>
+
+
+        <div class="subtitle">
+
+          Know Your Financial Protection Gap
+          &amp; Financial Worth
+
+        </div>
+
+
+        <p class="description">
+
+          A 30–45 minute FREE consultation
+          designed to help you identify
+          potential financial risks and
+          protection gaps.
+
+        </p>
+
+
+        <!-- =========================
+             BENEFITS
+        ========================= -->
+
+        <div class="benefits">
+
+          <div class="benefit">
+            Identify Your<br>
+            Financial Risks
+          </div>
+
+
+          <div class="benefit">
+            Review Your<br>
+            Protection
+          </div>
+
+
+          <div class="benefit">
+            Know Your<br>
+            Financial Gap
+          </div>
+
+        </div>
+
+
+        <!-- =========================
+             CTA
+        ========================= -->
+
+        <span class="cta">
+
+          BOOK MY FREE ASSESSMENT
+          &nbsp;→
+
+        </span>
+
+
+        <div class="click-note">
+
+          Click anywhere on this poster
+          to fill out the assessment form.
+
+        </div>
+
+      </section>
+
+
+      <!-- =========================
+           FOOTER
+      ========================= -->
+
+      <footer class="footer">
+
+        <div class="name">
+          Marissa Umali
+        </div>
+
+        <div class="role">
+          Licensed Financial Adviser
+          | Financial Educator
+        </div>
+
+      </footer>
+
+    </a>
+
+  </main>
+
+</body>
+</html>
